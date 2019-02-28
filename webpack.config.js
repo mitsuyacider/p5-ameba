@@ -29,6 +29,9 @@ module.exports = {
     resolve: {
         extensions: [ '', '.js', '.jpg', '.png', '.gif', '.ttf']
     },
+    loaders: [
+        { test: /\.json$/, loader: 'json' }, //追加 
+    ],
     plugins: [
         new CopyWebpackPlugin([
             {from: './src/assets', to: './assets' }

@@ -2,6 +2,7 @@ import p5 from 'p5';
 import 'p5/lib/addons/p5.sound';
 import 'p5/lib/addons/p5.dom';
 import ameba from './js/ameba';
+import data from 'json!./assets/data/animation.json';
 
 const sketch = (p5) => {
 	// make library globally available
@@ -13,7 +14,7 @@ const sketch = (p5) => {
 
 	p5.setup = () => {
 		p5.createCanvas(p5.windowWidth, p5.windowHeight);
-		
+		console.log(data.name)
 		for (let i = 0; i < amebaNum; i++) {
 			const creature = new ameba()
 			amebaStore.push(creature);
