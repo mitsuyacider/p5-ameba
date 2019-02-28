@@ -1,3 +1,231 @@
-{
-    "name": "testing"
-}
+[
+    {
+      "frequency": 1,
+      "amplitude": 2,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 2,
+      "amplitude": 12,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 3,
+      "amplitude": 12,
+      "ampSpeed" : 0.3,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 4,
+      "amplitude": 5,
+      "ampSpeed" : 0.2,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 5,
+      "amplitude": 4,
+      "ampSpeed" : 0.05,
+      "frequencySpeed": 0.05,
+      "ampRange": 10
+    },
+    {
+      "frequency": 6,
+      "amplitude": 12,
+      "ampSpeed" : 0.09,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 7,
+      "amplitude": 12,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 8,
+      "amplitude": 8,
+      "ampSpeed" : 0.8,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 9,
+      "amplitude": 12,
+      "ampSpeed" : 0.2,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 10,
+      "amplitude": 8,
+      "ampSpeed" : 0.05,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 11,
+      "amplitude": 12,
+      "ampSpeed" : 0.05,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 12,
+      "amplitude": 12,
+      "ampSpeed" : 0.1,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 13,
+      "amplitude": 5,
+      "ampSpeed" : 0.05,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 14,
+      "amplitude": 12,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 10
+    },
+    {
+      "frequency": 15,
+      "amplitude": 4,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 16,
+      "amplitude": 2,
+      "wireframe": true,
+      "ampSpeed" : 0.6,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 7,
+      "amplitude": 12,
+      "ampSpeed" : 0.5,
+      "wireframe": true,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 18,
+      "amplitude": 12,
+      "ampSpeed" : 0.05,
+      "wireframe": true,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 10,
+      "amplitude": 12,
+      "ampSpeed" : 0.1,
+      "wireframe": true,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 20,
+      "amplitude": 12,
+      "wireframe": true,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 2,
+      "amplitude": 12,
+      "ampSpeed" : 1,
+      "wireframe": true,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 3,
+      "amplitude": 12,
+      "wireframe": true,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 4,
+      "amplitude": 12,
+      "wireframe": true,
+      "ampSpeed" : 0.8,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 5,
+      "amplitude": 12,
+      "wireframe": true,
+      "ampSpeed" : 0.2,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 26,
+      "amplitude": 2,
+      "wireframe": true,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.5,
+      "ampRange": 1
+    },
+    {
+      "frequency": 12,
+      "amplitude": 12,
+      "wireframe": true,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.5,
+      "ampRange": 1
+    },
+    {
+      "frequency": 30,
+      "amplitude": 12,
+      "wireframe": true,
+      "radius" : 25,
+      "ampSpeed" : 0.5,
+      "frequencySpeed": 0.05,
+      "ampRange": 10
+    },
+    {
+      "frequency": 54,
+      "amplitude": 22,
+      "wireframe": true,
+      "ampSpeed" : 0.8,
+      "radius" : 20,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 5,
+      "amplitude": 2,
+      "wireframe": true,
+      "ampSpeed" : 0.2,
+      "radius" : 15,
+      "frequencySpeed": 0.05,
+      "ampRange": 1
+    },
+    {
+      "frequency": 26,
+      "amplitude": 2,
+      "wireframe": true,
+      "ampSpeed" : 0.5,
+      "radius" : 10,
+      "frequencySpeed": 0.5,
+      "ampRange": 1
+    }
+]
