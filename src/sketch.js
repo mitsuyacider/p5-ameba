@@ -11,7 +11,10 @@ const sketch = (p5) => {
 	let amebaNum = 30;
 
 	p5.setup = () => {
-		p5.createCanvas(p5.windowWidth, p5.windowHeight);		
+		// p5.createCanvas(p5.windowWidth, p5.windowHeight);		
+		var canvas = p5.createCanvas(501, 601)
+		canvas.parent("canvas");
+
 		for (let i = 0; i < amebaNum; i++) {
 			const config = data[i];
 			const creature = new ameba(config)
@@ -20,8 +23,7 @@ const sketch = (p5) => {
   }
   
   p5.draw = () => {
-    const color = p5.color('#CC6600');
-		p5.background(color, 85);
+		p5.background(0);
 
 		const step = 100;
 		let index = 0;

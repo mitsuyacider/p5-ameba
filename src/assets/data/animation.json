@@ -44,7 +44,7 @@
     {
       "frequency": 7,
       "amplitude": 12,
-      "ampSpeed" : 0.5,
+      "ampSpeed" : 1.5,
       "frequencySpeed": 0.05,
       "ampRange": 1
     },
@@ -58,21 +58,21 @@
     {
       "frequency": 9,
       "amplitude": 12,
-      "ampSpeed" : 0.2,
+      "ampSpeed" : 1.2,
       "frequencySpeed": 0.05,
       "ampRange": 1
     },
     {
       "frequency": 10,
       "amplitude": 8,
-      "ampSpeed" : 0.05,
+      "ampSpeed" : 0.5,
       "frequencySpeed": 0.05,
       "ampRange": 1
     },
     {
       "frequency": 11,
       "amplitude": 12,
-      "ampSpeed" : 0.05,
+      "ampSpeed" : 0.7,
       "frequencySpeed": 0.05,
       "ampRange": 1
     },
@@ -86,7 +86,7 @@
     {
       "frequency": 13,
       "amplitude": 5,
-      "ampSpeed" : 0.05,
+      "ampSpeed" : 0.9,
       "frequencySpeed": 0.05,
       "ampRange": 1
     },
@@ -123,7 +123,7 @@
     {
       "frequency": 18,
       "amplitude": 12,
-      "ampSpeed" : 0.05,
+      "ampSpeed" : 1.5,
       "wireframe": true,
       "frequencySpeed": 0.05,
       "ampRange": 1
