@@ -1,6 +1,6 @@
 
 This is motion sample for ameba.
-This code is strongly depends on p5 library.
+This code is strongly depends on p5.js library.
 Need to use with it by instance mode.
 
 
@@ -18,6 +18,8 @@ import ameba from 'path/to/ameba.js';
 ```
 
 ## Hello world
+**NOTE:**
+Need to pass p5 instance on initialization.
 ```
 const creature = new ameba(p5, {
     "frequency": 12,
@@ -36,25 +38,27 @@ creature.updateParameter()
 #### draw
 You can select draw type in dots or fill/storke. If you select fill/stroke type, at first you should set the specific color with either of stroke and fill or both. After setting the color, draw ameba. Three kinds of draw-types are prepared.
 
+* wireframe
 ```:wireframe
-// NOTE: draw wireframe
 p5.stroke(255)
 p5.noFill();
 ameba.draw(x, y);
 ```
 
+* fill
 ```:fill
-// NOTE: draw filled shape
-p5.noStroke()
+p5.noStroke();
 p5.fill(255);
 ameba.draw(x, y);
 ```
 
+* dots<br>
+enable to change dot size.
 ```:dots
-// NOTE: draw dot shape
-p5.noStroke()
+const dotsize = 1;
+p5.noStroke();
 p5.fill(255);
-ameba.draw(x, y, 1);
+ameba.drawWithDot(x, y, dotsize);
 ```
 
 ## Parameter
