@@ -1,8 +1,9 @@
 {
   "name": "p5-ameba",
-  "version": "1.0.0",
-  "description": "Create ameba motion",
-  "main": "index.js",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Create ameba animation with p5.js",
+  "main": "./lib/ameba.js",
   "scripts": {
     "start": "webpack && webpack-dev-server --watch --inline --content-base dist"
   },
@@ -18,7 +19,7 @@
     "processing"
   ],
   "author": "Mitsuya Watanabe <mitsuya.watanabe85@gmail.com>",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mitsuyacider/p5-ameba/issues"
   },
