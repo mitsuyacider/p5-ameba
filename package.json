@@ -1,14 +1,14 @@
 {
-  "name": "p5-es6-webpack-seed",
+  "name": "p5-ameba",
   "version": "1.0.0",
-  "description": "Create p5 sketches using es6 and bundle files with webpack",
+  "description": "Create ameba motion",
   "main": "index.js",
   "scripts": {
     "start": "webpack && webpack-dev-server --watch --inline --content-base dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julsgud/p5-es6-webpack-seed.git"
+    "url": "git+https://github.com/mitsuyacider/p5-ameba"
   },
   "keywords": [
     "p5js",
@@ -17,12 +17,12 @@
     "es2015",
     "processing"
   ],
-  "author": "Julio Gudino <julsgud@gmail.com>",
+  "author": "Mitsuya Watanabe <mitsuya.watanabe85@gmail.com>",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/julsgud/p5-es6-webpack-seed/issues"
+    "url": "https://github.com/mitsuyacider/p5-ameba/issues"
   },
-  "homepage": "https://github.com/julsgud/p5-es6-webpack-seed#readme",
+  "homepage": "https://mitsuyacider.com/",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.14.0",
