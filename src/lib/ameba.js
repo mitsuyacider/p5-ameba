@@ -1,8 +1,11 @@
 
-// NOTE: Default parameter
+// NOTE: Should be set with p5 instance.
+let p5;
 
 export default class ameba {
-  constructor(config) {
+  constructor(instance, config) {
+    p5 = instance;
+
     if (config) {
       this.dots = config.dots ? config.dots : 360;
       this.frequency = config.frequency ? config.frequency : 12;
@@ -10,7 +13,7 @@ export default class ameba {
       this.ampSpeed = config.ampSpeed ? config.ampSpeed : 0.05;
       this.frequencySpeed = config.frequencySpeed ? config.frequency : 0.05;
       this.ampRange = config.ampRange ? config.ampRange : 1;
-      this.step = 1;
+      this.step = config.step ? config.step : 1;
       this.degree = 1;
 
       this.radius = config.radius ? config.radius : 30;
@@ -47,10 +50,15 @@ export default class ameba {
     this.degree += 0.1;
   }
 
-  draw(pos) {
+  /**
+   * 
+   * @param {float} px x center position
+   * @param {float} py y center position
+   */
+  draw(px, py) {
     p5.push();
     p5.randomSeed(1);
-    p5.translate(pos.x, pos.y);
+    p5.translate(px, py);
     // p5.rotate(p5.radians(degree * 2));
     p5.beginShape();
     for (let i = 0; i < this.dots; i += this.step){    
@@ -70,14 +78,20 @@ export default class ameba {
     p5.pop();    
   }
 
-  drawWithDot(pos, dotSize) {
+  /**
+   * 
+   * @param {float} px x center position
+   * @param {float} py y center position
+   * @param {float} dotSize dot size
+   */
+  drawWithDot(px, py, dotSize) {
     p5.push();
     p5.randomSeed(1)
-    p5.translate(pos.x, pos.y);
+    p5.translate(px, py);
     // p5.rotate(p5.radians(degree * 2));
     let formResolution = 15;
     // p5.beginShape(p5.TRIANGLES);
-    for (let i = 0; i < this.dots; i += 4){    
+    for (let i = 0; i < this.dots; i += this.step){    
         // polar plot r=4+0.5 sin( 8 theta)
       const r = this.radius + this.amplitude * p5.sin( p5.radians(this.frequency * i ))			    
       const x = p5.cos(p5.radians(i)) * r
@@ -87,26 +101,4 @@ export default class ameba {
     }
     p5.pop();
   }
-
-  drawBrokenLine(pos) {
-    p5.push();
-    p5.randomSeed(1)
-    p5.translate(pos.x, pos.y);
-    // p5.rotate(p5.radians(degree * 2));
-    p5.beginShape(p5.TRIANGLES);
-    for (let i = 0; i < this.dots; i += 4){    
-        // polar plot r=4+0.5 sin( 8 theta)
-      const r = this.radius + this.amplitude * p5.sin( p5.radians(this.frequency * i ))			    
-      const x = p5.cos(p5.radians(i)) * r
-      const y = p5.sin(p5.radians(i)) * r
-      p5.curveVertex(x, y);
-
-      // NOTE: Connect start point with end point
-      if (i === this.dots.length - 1 || i === 0) {
-        p5.curveVertex(x, y);
-      }  
-    }
-    p5.endShape(p5.CLOSE);
-    p5.pop();    
-  }  
  }

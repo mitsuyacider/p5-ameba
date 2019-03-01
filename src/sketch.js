@@ -1,5 +1,5 @@
 import p5 from 'p5';
-import ameba from './js/ameba';
+import ameba from './lib/ameba';
 import data from 'json!./assets/data/animation.json';
 
 const sketch = (p5) => {
@@ -17,7 +17,7 @@ const sketch = (p5) => {
 
 		for (let i = 0; i < amebaNum; i++) {
 			const config = data[i];
-			const creature = new ameba(config)
+			const creature = new ameba(p5, config)
 			amebaStore.push(creature);
 		}
   }
@@ -43,10 +43,10 @@ const sketch = (p5) => {
 				p5.stroke(0);
 				if (config.wireframe) {
 					p5.noFill();
-					ameba.drawWithDot(pos, 1);
+					ameba.drawWithDot(pos.x, pos.y, 1);
 				} else {
 					p5.fill(255, 255, 0);
-					ameba.draw(pos);
+					ameba.draw(pos.x, pos.y);
 				}
 				// ameba.drawWithDot(pos, 1);
 				index++
