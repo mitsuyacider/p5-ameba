@@ -37,7 +37,7 @@ module.exports = {
             {from: './src/assets', to: './assets' }
         ]),
         new HtmlWebpackPlugin({
-            title: 'p5-es6-webpack-seed',
+            title: 'p5-ameba',
             template: './src/index.html',
             inject: 'head'
         })
