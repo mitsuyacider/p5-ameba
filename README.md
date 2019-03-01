@@ -42,14 +42,14 @@ You can select draw type in dots or fill/storke. If you select fill/stroke type,
 ```:wireframe
 p5.stroke(255)
 p5.noFill();
-ameba.draw(x, y);
+creature.draw(x, y);
 ```
 
 * fill
 ```:fill
 p5.noStroke();
 p5.fill(255);
-ameba.draw(x, y);
+creature.draw(x, y);
 ```
 
 * dots<br>
@@ -58,7 +58,7 @@ enable to change dot size.
 const dotsize = 1;
 p5.noStroke();
 p5.fill(255);
-ameba.drawWithDot(x, y, dotsize);
+creature.drawWithDot(x, y, dotsize);
 ```
 
 ## Parameter
