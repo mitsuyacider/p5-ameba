@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/p5-ameba.svg)](https://www.npmjs.com/package/p5-ameba)
 
 This is motion sample for ameba.
 This code is strongly depends on p5.js library.
