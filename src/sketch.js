@@ -1,5 +1,5 @@
 import p5 from 'p5';
-import ameba from './lib/ameba';
+import ameba from '../lib/ameba.es.js';
 import data from 'json!./assets/data/animation.json';
 
 const sketch = (p5) => {
