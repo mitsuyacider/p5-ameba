@@ -42,8 +42,9 @@
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-node-resolve": "^4.0.1",
     "standard": "^8.0.0",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "p5": "^0.5.3"

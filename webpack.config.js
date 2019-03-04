@@ -1,45 +1,14 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-// var img = require('./src/assets/panda.jpg');
+const path = require('path');
 
 module.exports = {
-    entry: './src/sketch.js',
+    entry: './src/index.js',
     output: {
-        path: './dist',
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     devServer: {
         inline: true,
         port: 8888,
-    },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['es2015']
-            }
-        }, {
-            test: /\.js$/, 
-            loader: 'eslint-loader', 
-            exclude: /node_modules/
-        }]
-    },
-    resolve: {
-        extensions: [ '', '.js', '.jpg', '.png', '.gif', '.ttf']
-    },
-    loaders: [
-        { test: /\.json$/, loader: 'json' }, //追加 
-    ],
-    plugins: [
-        new CopyWebpackPlugin([
-            {from: './src/assets', to: './assets' }
-        ]),
-        new HtmlWebpackPlugin({
-            title: 'p5-ameba',
-            template: './src/index.html',
-            inject: 'head'
-        })
-    ]
+        contentBase: path.join(__dirname, 'dist')
+    }
 }

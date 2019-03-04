@@ -1,6 +1,6 @@
 import p5 from 'p5';
 import ameba from '../lib/ameba.es.js';
-import data from 'json!./assets/data/animation.json';
+const data = require('./assets/data/animation.json');
 
 const sketch = (p5) => {
 	// make library globally available
