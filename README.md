@@ -12,10 +12,17 @@ Need to use with it by instance mode.
 You can test ameba shapes. Go to [p5-ameba-generator](https://github.com/mitsuyacider/p5-ameba-generator) or visit [here](https://www.openprocessing.org/sketch/674184).
 
 ## Getting started
+### Download
+Via npm
+
+```
+$ npm install p5-ameba --save
+```
+
 ### Usage
 ### ES6 modules
 ```
-import ameba from 'path/to/ameba.js';
+import ameba from 'p5-ameba';
 ```
 
 ## Hello world
@@ -72,3 +79,11 @@ creature.drawWithDot(x, y, dotsize);
 |step|resolution of ameba|1|
 |dots|roundness of ameba|360|
 |frequencySpeed|non-supported|non-supported|
+
+## Quick Start 
+```
+git clone https://github.com/mitsuyacider/p5-ameba
+cd p5-ameba
+npm install
+npm run start
+```
