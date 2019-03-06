@@ -1,6 +1,6 @@
 {
   "name": "p5-ameba",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "private": false,
   "description": "Create ameba animation with p5.js",
   "main": "./lib/ameba.js",

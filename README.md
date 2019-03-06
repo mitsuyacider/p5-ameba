@@ -22,8 +22,14 @@ $ npm install p5-ameba --save
 ### Usage
 ### ES6 modules
 ```
-import ameba from 'p5-ameba';
+import ameba from 'p5-ameba/lib/ameba.es.js';
 ```
+
+### CommonJS
+```
+import ameba from 'p5-ameba/lib/ameba.js';
+```
+
 
 ## Hello world
 **NOTE:**
