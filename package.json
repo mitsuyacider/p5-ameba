@@ -1,9 +1,9 @@
 {
   "name": "p5-ameba",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Create ameba animation with p5.js",
-  "main": "./lib/ameba.js",
+  "umd:main": "./lib/ameba.js",
   "module": "./lib/ameba.es.js",
   "scripts": {
     "start": "webpack && webpack-dev-server --watch --inline --content-base dist",
